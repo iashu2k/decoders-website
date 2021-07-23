@@ -1,31 +1,57 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Button } from "theme-ui";
 import { keyframes } from "@emotion/core";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
+import { NavLink } from "components/link";
 import Logo from "components/logo";
 import LogoDark from "assets/logo.svg";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
+import { useRouter } from "next/router";
 
 export default function Header({ className }) {
+  const router = useRouter();
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
         <Logo src={LogoDark} />
         <Flex as="nav" sx={styles.nav}>
-          {menuItems.map((menuItem, i) => (
-            <Link
-              activeClass="active"
-              to={menuItem.path}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              key={i}
-            >
-              {menuItem.label}
-            </Link>
-          ))}
+          {menuItems.map((menuItem, i) => {
+            if (menuItem.label === "Alumni") {
+              return (
+                <NavLink
+                  activeClass="active"
+                  path={menuItem.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  key={i}
+                >
+                  {menuItem.label}
+                </NavLink>
+              );
+            }
+
+            return (
+              <Link
+                activeClass="active"
+                to={menuItem.path}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                key={i}
+                onClick={() => {
+                  if (router.pathname === "/alumni") {
+                    router.push("/");
+                  }
+                }}
+              >
+                {menuItem.label}
+              </Link>
+            );
+          })}
         </Flex>
         <Button
           className="donate__btn"
@@ -34,7 +60,7 @@ export default function Header({ className }) {
         >
           Get Started
         </Button>
-        <MobileDrawer/>
+        <MobileDrawer />
       </Container>
     </header>
   );

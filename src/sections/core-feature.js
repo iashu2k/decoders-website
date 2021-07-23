@@ -2,14 +2,14 @@
 import { jsx, Container, Box, Image } from "theme-ui";
 import TextFeature from "components/text-feature";
 
-import FeatureThumb from "assets/core-feature.png";
+import FeatureThumb from "assets/core-feature.jpg";
 import shapePattern from "assets/shape-pattern2.png";
 
 const data = {
-  subTitle: "Core features",
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  subTitle: "Lorem ipsum",
+  title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   description:
-    "Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.",
+    "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   btnName: "Get Started",
   btnURL: "#",
 };

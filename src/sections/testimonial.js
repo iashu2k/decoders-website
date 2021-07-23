@@ -14,7 +14,7 @@ import Head from 'next/head';
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'At vero eos et accusamus et',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar1,
@@ -24,30 +24,30 @@ const data = [
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'At vero eos et accusamus et',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar2,
+    avatar: Avatar1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
-    review: 5,
+    review: 4,
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
+    title: 'At vero eos et accusamus et',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar3,
+    avatar: Avatar1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
-    review: 5,
+    review: 4,
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'At vero eos et accusamus et',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar4,
+    avatar: Avatar1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 4,
@@ -106,14 +106,14 @@ export default function TestimonialCard() {
      <Container css={{textAlign: 'center'}}>
       <SectionHeader 
         slogan="Testimonial"
-        title="Meet Client Satisfaction"
+        title="Sed ut perspiciatis"
       />
      </Container>
      <Box sx={styles.carouselWrapper}>
        <Carousel {...carouselParams}>
         {data.map((item)=>(
-          <Box sx={styles.reviewCard} key={item.sliderClass}>
-            <Rating rating={item.review} />
+          <Box sx={styles.reviewCard} key={item.id}>
+            {/* <Rating rating={item.review} /> */}
             <Heading as="h3" sx={styles.title}>
               {item.title}
             </Heading>

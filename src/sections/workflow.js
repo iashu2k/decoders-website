@@ -11,37 +11,37 @@ import Head from 'next/head';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Sed ut perspiciatis unde',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Sed ut perspiciatis unde',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Sed ut perspiciatis unde',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Sed ut perspiciatis unde',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit',
   },
 ];
 
 export default function WorkFlow() {
   return (
-    <section sx={styles.workflow}>
+    <section sx={styles.workflow} id="events">
       <Container>
         <SectionHeader 
-          slogan="WHATS THE FUNCTION"
-          title="Meet the feature of our product"
+          slogan="quia non numquam"
+          title="Quis autem vel eum iure reprehenderit"
           isWhite={true}
         />
         <Grid sx={styles.grid}>

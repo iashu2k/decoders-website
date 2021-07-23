@@ -179,7 +179,7 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <section>
+    <section id="team" sx={{ variant: "section.team" }}>
       <Container>
         <SectionHeader 
           slogan="our team"

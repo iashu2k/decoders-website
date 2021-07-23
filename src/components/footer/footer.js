@@ -1,19 +1,25 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Text } from 'theme-ui';
-import { Link } from 'components/link';
-import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import { jsx, Box, Container, Image, Text } from "theme-ui";
+import { Link } from "components/link";
+import data from "./footer.data";
+import FooterLogo from "assets/logo.svg";
 
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/"><Image src={FooterLogo} alt="Logo" /></Link>
+          <Link path="/">
+            <Image
+              src={FooterLogo}
+              sx={{ width: "7%", height: "auto" }}
+              alt="Logo"
+            />
+          </Link>
           <Box sx={styles.footer.menus}>
             <nav>
-              {data.menuItem.map((item, i)=>(
-                <Link 
+              {data.menuItem.map((item, i) => (
+                <Link
                   path={item.path}
                   key={i}
                   label={item.label}
@@ -23,7 +29,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-          © Copyright by {new Date().getFullYear()} Company Name
+            © Copyright by {new Date().getFullYear()} DeCoders
           </Text>
         </Box>
       </Container>
@@ -34,43 +40,43 @@ export default function Footer() {
 const styles = {
   footer: {
     footerBottomArea: {
-      borderTop: '1px solid',
-      borderTopColor: 'border_color',
-      display: 'flex',
+      borderTop: "1px solid",
+      borderTopColor: "border_color",
+      display: "flex",
       pt: [7, null, 8],
-      pb: ['40px', null, '100px'],
-      textAlign: 'center',
-      flexDirection: 'column',
+      pb: ["40px", null, "100px"],
+      textAlign: "center",
+      flexDirection: "column",
     },
     menus: {
       mt: [3, 4],
       mb: 2,
       nav: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: "wrap",
       },
     },
 
     link: {
-      fontSize: [1, '15px'],
-      color: 'text',
-      fontWeight: '400',
+      fontSize: [1, "15px"],
+      color: "text",
+      fontWeight: "400",
       mb: 2,
-      cursor: 'pointer',
-      transition: 'all 0.35s',
-      display: 'block',
-      textDecoration: 'none',
+      cursor: "pointer",
+      transition: "all 0.35s",
+      display: "block",
+      textDecoration: "none",
       lineHeight: [1.5, null, 1.8],
       px: [2, null, 4],
-      ':hover': {
-        color: 'primary',
+      ":hover": {
+        color: "primary",
       },
     },
     copyright: {
-      fontSize: [1, '15px'],
-      width: '100%',
+      fontSize: [1, "15px"],
+      width: "100%",
     },
   },
 };

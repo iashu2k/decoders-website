@@ -54,7 +54,7 @@ export default function MobileDrawer() {
               <Link
                 activeClass="active"
                 to={menuItem.path}
-                spy="true"
+                spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}

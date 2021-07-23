@@ -13,34 +13,34 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Ut tristique',
+    title: 'Ut tristique',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Praesent eleifend consectetur rutrum. Sed ultricies enim orci, nec posuere ligula placerat quis. Pellentesque habitant. ',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Ut tristique',
+    title: 'Ut tristique',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Praesent eleifend consectetur rutrum. Sed ultricies enim orci, nec posuere ligula placerat quis. Pellentesque habitant. ',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Ut tristique',
+    title: 'Ut tristique',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Praesent eleifend consectetur rutrum. Sed ultricies enim orci, nec posuere ligula placerat quis. Pellentesque habitant. ',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Ut tristique',
+    title: 'Ut tristique',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Praesent eleifend consectetur rutrum. Sed ultricies enim orci, nec posuere ligula placerat quis. Pellentesque habitant. ',
   },
 ];
 
@@ -49,8 +49,8 @@ export default function KeyFeature() {
    <section sx={{variant: 'section.keyFeature'}} id="feature">
     <Container>
       <SectionHeader
-      slogan="Whats the function"
-      title="Meet the feature of our product"
+      slogan="Cras ullamcorper quam"
+      title="Vivamus faucibus sapien tortor, id sollicitudin"
       />
 
       <Grid sx={styles.grid}>

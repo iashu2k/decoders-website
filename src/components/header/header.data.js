@@ -5,14 +5,22 @@ export default [
   },
   {
     path: 'feature',
-    label: 'Features',
+    label: 'About Us',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'events',
+    label: 'Events',
+  },
+  {
+    path: 'team',
+    label: 'Team',
   },
   {
     path: 'testimonial',
     label: 'Testimonial',
+  },
+  {
+    path: 'alumni',
+    label: 'Alumni',
   },
 ];

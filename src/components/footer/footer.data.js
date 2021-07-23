@@ -2,19 +2,19 @@ export default {
   menuItem: [
     {
       path: '/',
-      label: 'Home',
+      label: 'Lorem',
     },
     {
       path: '/',
-      label: 'Adversite',
+      label: 'Ipsum',
     },
     {
       path: '/',
-      label: 'Supports',
+      label: 'Lorem',
     },
     {
       path: '/',
-      label: 'Marketing',
+      label: 'Ipsum',
     },
     {
       path: '/',

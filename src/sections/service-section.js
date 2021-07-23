@@ -15,7 +15,7 @@ import TextFeature from "components/text-feature";
 import ModalVideo from "react-modal-video";
 import { IoIosAdd, IoIosPlay } from "react-icons/io";
 
-import ServiceThumb from "assets/service-thumb.png";
+import ServiceThumb from "assets/service-thumb.jpg";
 import shapePattern from "assets/shape-pattern1.png";
 
 import Smart from "assets/services/smart.svg";
@@ -23,24 +23,24 @@ import Secure from "assets/services/secure.svg";
 import SectionHeader from "components/section-header";
 
 const data = {
-  subTitle: "our services",
-  title: "Business Goals Achieved with Design",
+  subTitle: "Cras ullamcorper",
+  title: "Vivamus faucibus sapien tortor, id sollicitudin",
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: "Smart Features",
-      title: "Smart Features",
+      altText: "Cras ullamcorper",
+      title: "Cras ullamcorper",
       text:
-        "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+        "Praesent eleifend consectetur rutrum. Sed ultricies enim orci, nec posuere ligula placerat quis. Pellentesque habitant.",
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: "Secure Contents",
-      title: "Secure Contents",
+      altText: "Cras ullamcorper",
+      title: "Cras ullamcorper",
       text:
-        "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+        "Praesent eleifend consectetur rutrum. Sed ultricies enim orci, nec posuere ligula placerat quis. Pellentesque habitant.",
     },
   ],
 };

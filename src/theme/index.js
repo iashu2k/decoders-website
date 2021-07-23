@@ -9,7 +9,7 @@ export default {
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
     yellow: '#FFA740', // border color
-    primary: '#EA3A60', // primary button and link color
+    primary: '#476072', // primary button and link color
     secondary: '#2563FF', // secondary color - can be used for hover states
     muted: '#E4E4E4', // muted color
     accent: '#609', // a contrast color for emphasizing UI
@@ -17,11 +17,11 @@ export default {
     // highlight	a background color for highlighting text
     modes: {
       dark: {
-        text: '#fff',
-        background: '#000',
-        primary: '#0cf',
+        text: '#ffffff',
+        background: '#121212',
+        primary: '#00FFFF',
         secondary: '#09c',
-        muted: '#111',
+        muted: '#121212',
       },
     },
   },
@@ -106,7 +106,7 @@ export default {
     services: {
       pb: ['90px', null, 9, null, null, 10, null, '150px'],
     },
-    pricing: {
+    team: {
       pt: [8, null, 9, null, null, 10, null, '180px'],
       pb: ['90px', null, 9, null, null, 10, null, '180px'],
     },
